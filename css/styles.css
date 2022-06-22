@@ -6,6 +6,7 @@
     --background-main-color: #ffffff;
     --background-secondary-color: #2f303a;
     --button-background-color: #2196f3;
+    --portfolio-list-gap: 30px;
   }
 /*головні стилі сторінок*/
 body {
@@ -20,9 +21,57 @@ body {
 /*відключення крапок у списках*/
 .list {
     list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+.link .link1 {
+  text-decoration: none;
+}
+/*Обнулення верхніх відступів*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+/*Властивості відображення картинок*/
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*Загальний клас відступу секцій*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/*Загальний клас контейнерів*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+.button {
+  cursor: pointer;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
+
 /*Дизайн логотипу*/
 .logo {
+    display: flex;
+    margin-left: 93px;
     font-family: Raleway, sans-serif;
     color: #2196f3;
     text-decoration: none;
@@ -32,8 +81,25 @@ body {
 .logopart-studio {
     color: #292929;
 }
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+.site-navigation {
+  display: flex;
+  padding-left: 0;
+}
+.site-navigation .item {
+  margin-right: 50px;
+}
+.site-navigation .item:last-child {
+  margin-right: 0;
+}
 /*Дизайн меню навыгації*/
 .site-navigation .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-main-color);
     font-weight: 500;
     line-height: 1.14;
@@ -49,7 +115,19 @@ body {
     color: var(--accent-color);
   }
 /*Дизайн контактів в хедері*/
+.header-contacts {
+  display: flex;
+  margin-left: auto;  
+}
+.header-contacts .item {
+  margin-right: 50px;
+}
+.header-contacts .item:last-child {
+  margin-right: 0;
+}
 .header-contacts .link-contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--text-main-color);
     font-weight: 500;
     line-height: 1.14;
